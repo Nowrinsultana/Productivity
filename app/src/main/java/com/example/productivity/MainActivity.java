@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Button btncamera;
     Button btngallery;
     Button btnsensor;
+    Button btnmap;
     private final int REQUEST_IMAGE_CAPTURE = 1;
     private final int REQUEST_GALLERY_CAPTURE = 2;
 
@@ -48,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         btncamera = findViewById(R.id.camera);
         btngallery = findViewById(R.id.gallery);
         btnsensor = findViewById(R.id.sensor);
+        btnmap=findViewById(R.id.MAP);
+        btnmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MAP.class);
+                startActivity(intent);
+            }
+        });
         btnsensor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

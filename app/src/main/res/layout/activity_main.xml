@@ -41,13 +41,29 @@
         android:text="Open Gallery"
         android:id="@+id/gallery"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
-    <Button
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Sensor"
         android:gravity="center"
-        android:id="@+id/sensor"/>
+        android:id="@+id/sensor"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open MAP"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/MAP"/>
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
