@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Button btngallery;
     Button btnsensor;
     Button btnmap;
+    Button btnfragment;
     private final int REQUEST_IMAGE_CAPTURE = 1;
     private final int REQUEST_GALLERY_CAPTURE = 2;
 
@@ -50,10 +51,18 @@ public class MainActivity extends AppCompatActivity {
         btngallery = findViewById(R.id.gallery);
         btnsensor = findViewById(R.id.sensor);
         btnmap=findViewById(R.id.MAP);
+        btnfragment=findViewById(R.id.fragment);
         btnmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MAP.class);
+                startActivity(intent);
+            }
+        });
+        btnfragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Fragment.class);
                 startActivity(intent);
             }
         });

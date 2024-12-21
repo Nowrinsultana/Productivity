@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,6 +16,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/text"
         android:text="Mobiole App Development"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:padding="25dp"
         android:gravity="center"
@@ -23,28 +25,32 @@
 
     <ImageView
         android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:scaleType="fitXY"
+        android:background="#505B5A5A"
         android:id="@+id/image"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Open Camera"
-        android:id="@+id/camera"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
 
-        android:text="Open Gallery"
-        android:id="@+id/gallery"
-        />
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Open Camera"
+            android:layout_margin="10dp"
+            android:id="@+id/camera" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="Open Gallery"
+            android:id="@+id/gallery" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <Button
         android:layout_width="wrap_content"
@@ -52,7 +58,7 @@
         android:text="Open Sensor"
         android:gravity="center"
         android:id="@+id/sensor"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_margin="10dp"/>
 
         <Button
@@ -65,12 +71,27 @@
         android:id="@+id/MAP"/>
     </LinearLayout>
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:gravity="center"
-        android:id="@+id/out"/>
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:id="@+id/fragment"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:id="@+id/out"/>
+
+    </LinearLayout>
 
 
 
